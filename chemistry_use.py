@@ -1,16 +1,18 @@
 import os
 from Chemistry12Funtion import *
 from main_funtion import *
+import question1
 #from question1 import question
 def Chemistry():
     while(1==1):
-        print("``````````")
+        print("`")
         print("MENU")
-        print("```````````````````````````````````````````````````````````````````````````````")
+        print("`````````````")
         print("1)Solution Chapter from Class 12th NCERT tutorial")
+        print("2)Solution Chapter multiple choice question")
         print("3)Summary of solution")
         print("0)Exit")
-        print("```````````````````````````````````````````````````````````````````````````````")
+        print("````````````````")
         ch=input("Enter your choice from menu")
         if(ch=='3'):
             writespeak("""A solution is a homogeneous mixture of two or more substances. Solutions are classified as solid, liquid and gaseous solutions. The concentration of a solution is expressed in terms of mole fraction, molarity, molality and in percentages. The dissolution of a gas in a liquid is governed by Henry’s law, according to which, at a given temperature, the solubility of a gas in a liquid is directly proportional to the partial pressure of the gas. The vapour pressure of the solvent is lowered by the presence of a non-volatile solute in the solution and this lowering of vapour pressure of the solvent is governed by Raoult’s law, according to which the relative lowering of vapour pressure of the solvent over a solution is equal to the mole fraction of a non-volatile solute present in the solution. However, in a binary liquid solution, if both the components of the solution are volatile then another form of Raoult’s law is used. Mathematically, this form of the Raoult’s law is stated as:
@@ -20,6 +22,7 @@ The properties of solutions which depend on the number of solute particles and a
 Quantitatively, the extent to which a solute is dissociated or associated can be expressed by van’t Hoff factor i. This factor has been defined as ratio of normal molar mass to experimentally determined molar mass or as the ratio of observed colligative property to the calculated colligative property.""")
             input("Press enter:\t ")
             os.system("cls")
+        
         elif(ch=='0'):
             exit()
         elif(ch not in "1230"):
@@ -27,9 +30,9 @@ Quantitatively, the extent to which a solute is dissociated or associated can be
         elif(ch=='1'):
             def main():
                 os.system("cls")
-                print("  *********************************************************************************")
+                print("  ***************************")
                 print("                                     Solution                                                          ")
-                print("  *********************************************************************************")
+                print("  ***************************")
             main()
             #############################################################################################################
             #                                                                                                   First Page
@@ -38,25 +41,25 @@ Quantitatively, the extent to which a solute is dissociated or associated can be
             print("    ......................................................................")
             print("        a)Mass percentage :-")
             solution.expression_for_contiontration.MassPercentage("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        b)Volume percentage :-")
             solution.expression_for_contiontration.VolumePercentage("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        c)Mass by volume :-")
             solution.expression_for_contiontration.MassByVolume("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        d)Part per million :-")
             solution.expression_for_contiontration.PartPerMillion("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        e)Mole fraction :-")
             solution.expression_for_contiontration.MoleFraction("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        f)Molarity :-")
             solution.expression_for_contiontration.Molarity("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        g)Molalty :-")
             solution.expression_for_contiontration.Molality("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             writespeak("Press enter for going next topic or any character for end the series ")
             a=input()
             if(a!=""):
@@ -72,23 +75,23 @@ Quantitatively, the extent to which a solute is dissociated or associated can be
             print("      Solubility of solid in liquid")
             print("        Effect of Temprature   :-")
             solution.Solubility.SolubilityOfSolidInLiguid.temprature("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        Effect of pressure   :-")
             solution.Solubility.SolubilityOfSolidInLiguid.pressure("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("      Solubility of solid in liquid")
             print("        Effect of pressure  :-")
             solution.Solubility.SolubilityofGasInLiguid.pressure("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        Henry Law  :-")
             solution.Solubility.SolubilityofGasInLiguid.HenryLaw("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        Application of henry law  :- ")
             solution.Solubility.SolubilityofGasInLiguid.MoleFraction_HenryLawApplication("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             print("        Effect of low pressure")
             solution.Solubility.SolubilityofGasInLiguid.lowpressure("          ");Nsec(2)
-            print("        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
+            print("        ~~~~~~~~~~~~~~~~~~~~")
             writespeak("Press enter for going next topic or any character for end the series ")
             a=input()
             if(a!=""):
